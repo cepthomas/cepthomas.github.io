@@ -1,0 +1,34 @@
+
+/*
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #369;
+}
+
+h1 {
+  margin:150px auto 50px auto;
+  text-align:center;
+  color:#fff;
+}
+
+
+#sourceTA {
+    display: block;
+}
+#targetDiv {
+  border: 1px dashed #333333;
+  width: 600px;
+  height: 400px;
+}
+
+#footer {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e3f2fd;
+}
+*/
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 5.0rem;
+}
+
