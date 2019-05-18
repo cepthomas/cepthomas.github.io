@@ -8,10 +8,10 @@
         <link rel="icon" type="image/png" href="img/icon.jpg">
         <title>Chris Thomas Software Engineer</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="ct1.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <link href="ct1.css" rel="stylesheet">
     </head>
 
     <body>
@@ -22,49 +22,80 @@
         <main role="main">
             <div class="jumbotron">
                 <div class="container">
-                    <p>This is a Work-In-Progress for a portfolio + opinion site.</p>
+                    <p>
+                    I provide consulting and design services for software systems and applications. On this page is the usual basic information along with some personal observations on software engineering in general. On the Case Studies page are several anecdotal capsules describing real world approaches to real world problems.
+                    </p>
+                    <a href="https://www.linkedin.com/in/cepthomas/">LinkedIn</a>
+                    </br>
+                    <a href="https://github.com/cepthomas">Repos</a>
                 </div>
             </div>
 
             <div class="container">
-                <!-- Example row of columns -->
                 <div class="row">
                     <div class="col-md-4">
                         <h2>Expertise</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p>
+                        OS/Framework: Windows, Linux, embedded (bare metal or minimal kernel), QNX, .NET, Qt.<br/><br/>
+                        Languages: C, C++, C#, Lua, Python, JavaScript, SQL.<br/><br/>
+                        Regulated industries: Medical devices, Health, Rail, Aerospace.
+                        </p>
                     </div>
+
                     <div class="col-md-4">
-                        <h2>System Engineering</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <h2>The Reality Of Software</h2>
+                        <p>
+                        The reality is that most software projects are not clean sheet designs but consist of adding to or modifying an existing package. Since some of these can be quite ancient (how about a 30+ year old Fortran application running on a dedicated F77 emulator!) they tend to have accumulated a lot of cruft. Quite often there is naught to be done to save the patient and a full re-write is the only effective and efficient way forward. However in many other cases, careful rearchitecting, refactoring and retrofitting can revitalize the application without disrupting the core codebase. 
+                        </p>
                     </div>
+
                     <div class="col-md-4">
-                        <h2>Distressed Project Recovery</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <h2>The Other Reality Of Software</h2>
+                        <p>
+                        Most software is overly complex - Occam's razor must be a guiding principle. Many systems are designed by following certain patterns and models too rigorously and not taking a more "holistic" view. Compare Boost with the standard Qt libraries: the former is an unintelligible PhD dissertation, the latter an elegant and clean solution with consistent APIs. And then there's  the whole JavaScript web ecosystem - open source from the dark side. Just ask
+                        <a href="https://www.youtube.com/watch?v=lKXe3HUG2l4">Joe Armstrong</a>.
+                        </p>
                     </div>
+
                 </div>
 
-                <hr>
+                <!-- <hr> -->
 
-            </div> <!-- /container -->
+            </div>
 
             <div class="container">
-                <!-- Example row of columns -->
                 <div class="row">
                     <div class="col-md-4">
+                        <h2>Systems Engineering</h2>
+                        <p>
+                        The software is only one part of an overall system. In order to ensure successful outcomes, the full lifecycle must be considered:
+                        </p>
+                        <ul>
+                        <li>Accurate requirements gathering and management, and traceability to...</li>
+                        <li>Specification of architecture and design and...</li>
+                        <li>Testing in myriad forms: unit, integration, verification, validation, etc.</li>
+                        </ul>
+                        <p>
+                        All of which must be properly documented (but automate the drudgery as much as possible!).
+                        </p>
+                    </div>
+                    <div class="col-md-4">
                         <h2>Testing</h2>
-                        <p>In at fringilla sapien. In magna odio, consectetur sit amet molestie vitae, ultricies id mauris. Nulla ac turpis in nunc congue aliquam sed sit amet ante. Aliquam vulputate, velit laoreet fringilla ullamcorper, erat augue fringilla mauris, sit amet euismod elit tortor id neque. </p>
+                        <p>
+                        Too often in the hurry to design and implement, testing is not given its due attention, with inevitable long-term pains. Ideally the application should be designed for testability from the start, however good results can be had post hoc by adding appropriate interfaces enabling the use of external tools to actually drive the test cases. This is particularly true for embedded systems which are notoriously difficult to unit test.
+                        </p>
                     </div>
                     <div class="col-md-4">
-                        <h2>The State Of Software</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Links</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <h2>Other Interesting Reading</h2>
+                        <p>
+                        <a href="http://www.smashcompany.com/technology/object-oriented-programming-is-an-expensive-disaster-which-must-end">Object Oriented Programming is an expensive disaster which must end</a></br>
+                        <a href="https://pragdave.me/blog/2014/03/04/time-to-kill-agile.html">Agile is Dead (Long Live Agility)</a>
+                        </p>
                     </div>
                 </div>
                 <hr>
-            </div> <!-- /container -->
+            </div>
+
         </main>
 
         <!-- ------------ load scripts ----------------- -->
