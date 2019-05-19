@@ -19,8 +19,73 @@
         <div class="container-fluid" id="header"></div>
 
         <!-- ------------ content ----------------- -->
-        <h2 class="text-center">Coming soon</h2>
+        <main role="main">
 
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h4>Gluing Stuff Together</h4>
+                        <p>
+                        A common task is to glue together two or more existing systems without significantly perturbing the code body, in order to minimize the revalidation effort. A large body of embedded C++ algorithm code was required to be wed to a Windows C# application. The C++ code could not be touched in any way and the sheer number of interface methods and structures eliminated a traditional Platform Invoke solution. Google's Protocol Buffers was used to easily generate language-specific wrappers that perform serialization at each end efficiently and quickly.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Revitalizing An Old Codebase</h4>
+                        <p>
+                        A C++ real-time system had evolved over 20+ years and multiple products to the point where it was extremely brittle - touching almost anything caused issues to arise in unexpected places. A decision was made to scope out a migration to a more loosely coupled and testable platform.  Each identified subsystem  received a consistent and self-documenting SOA API. Now that the subsystems were isolated, they could be updated and tested individually without affecting any others. For test support, Lua was embedded and a simple text interface over a socket was opened. The tester could now easily create test scripts in Lua on their PC and send them to the target to be executed, collecting the results as json data. The original limited GUI was replaced by Qt Widgets, and Qt Creator became the IDE. 
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Continuous Integration</h4>
+                        <p>
+                        A blood banking application was required to have 100% unit testing, code coverage analysis and code review. The general community considered this impossible to achieve given the resources - we disagreed and implemented best in breed tools choreographed by a Jenkins CI server. The fully automated workflow:
+                        <ul>
+                        <li>Developer checks in a piece of code.</li>
+                        <li>A Crucible code review project is created and reviewers invited.</li>
+                        <li>All unit and code coverage tests are run.</li>
+                        <li>A pdf report is generated, suitable for submission to the FDA.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- <hr> -->
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h4>Log Visualization</h4>
+                        <p>
+                        A very large real-time system produces a dozen or so logs, ranging from IS interactions down to individual motion control commands. In order to debug subtle problems it was necessary to peel apart these logs and combine them so as to get a complete view in time order. However, each had a completely different format making this process extremely tedious and error-prone. A desktop application was created that allowed the user to identify specific log files, filter by time and any other arbitrary content, and combine into a single body. Also supported is arbitrary annotation and colorizing by any filter criteria so the user could easily visualize the event sequence.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Automated Requirements Management</h4>
+                        <p>
+                        A DO-178B product required traceability from requirements to the specific code functions where they were implemented. The big tools available were too expensive with steep learning curves. A team of three technical writers was given three months to perform this task manually (in addition to other writing products), which all knew was inadequate. I had them add simple markup to the function headers in the code identifying the requirements. An application parsed these files, gathered the markup, and provided the traceability matrix. With the time saved, I also included the high level Data Flow Diagram and Data Dictionary and supplementary information so that the end result was not just the matrix but a complete view of the system - all automatically generated.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Unit Test In Simulation</h4>
+                        <p>
+                        A real-time subsystem performing some business logic had originally been scoped as trivial but actually grew quite large (became known as the "junk drawer"). Scenarios grew quite complex and almost impossible to test on the target. Some redesign separated out the logic from the interfaces and a lightweight test framework added - now the code code be built and tests executed on a PC with the powerful tools available. Acceptance of this approach was granted by the QA department. With bug fixes and additional features, eventually the test code grew to be far greater than the code under test - a good indicator.
+                        </p>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+
+        </main>
 
         <!-- ------------ load scripts ----------------- -->
         <!-- <script src="bss.js"></script> -->
@@ -30,4 +95,8 @@
         });
         </script>
     </body>
+
+
+
+
 </html>
