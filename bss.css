@@ -1,7 +1,12 @@
 
 /* Move down content because we have a fixed navbar */
 body {
-  padding-top: 5.0rem;
+    padding-top: 5.0rem;
+}
+
+.navbar {
+    padding: 0.5rem;
+    /*margin: 0;*/
 }
 
 .nav-link {
@@ -15,5 +20,5 @@ body {
 
 ul {
     /*margin-left: -1em;*/
-    padding-left: 1em;/*5px;*/    
+    padding-left: 1em;
 }
