@@ -34,7 +34,7 @@
                     <div class="col-md-4">
                         <h4>Revitalizing An Old Codebase</h4>
                         <p>
-                        A C++ real-time system had evolved over 20+ years and multiple products to the point where it was extremely brittle - touching almost anything caused issues to arise in unexpected places. A decision was made to scope out a migration to a more loosely coupled and testable platform.  Each identified subsystem  received a consistent and self-documenting SOA API. Now that the subsystems were isolated, they could be updated and tested individually without affecting any others. For test support, Lua was embedded and a simple text interface over a socket was opened. The tester could now easily create test scripts in Lua on their PC and send them to the target to be executed, collecting the results as json data. The original limited GUI was replaced by Qt Widgets, and Qt Creator became the IDE. 
+                        A C++ real-time system had evolved over 20+ years and multiple product iterationss to the point where it was extremely brittle - touching almost anything caused issues to arise in unexpected places. A decision was made to scope out a migration to a more loosely coupled and testable platform.  Each identified subsystem  received a consistent and self-documenting SOA API. Now that the subsystems were isolated, they could be updated and tested individually without affecting any others. For test support, Lua was embedded and a simple text interface over a socket was opened. The tester could now easily create test scripts in Lua on their PC and send them to the target to be executed, collecting the results as json data. The original limited GUI was replaced by Qt Widgets, and Qt Creator became the IDE. 
                         </p>
                     </div>
 
@@ -70,14 +70,14 @@
                     <div class="col-md-4">
                         <h4>Automated Requirements Management</h4>
                         <p>
-                        A DO-178B product required traceability from requirements to the specific code functions where they were implemented. The big tools available were too expensive with steep learning curves. A team of three technical writers was given three months to perform this task manually (in addition to other writing products), which all knew was inadequate. I had them add simple markup to the function headers in the code identifying the requirements. An application parsed these files, gathered the markup, and provided the traceability matrix. With the time saved, I also included the high level Data Flow Diagram and Data Dictionary and supplementary information so that the end result was not just the matrix but a complete view of the system - all automatically generated.
+                        A DO-178B compliant product required traceability from requirements to the specific code functions where they were implemented. The big tools available were too expensive with steep learning curves. A team of three technical writers was given three months to perform this task manually (in addition to other writing products), which all knew was inadequate. I had them add simple markup to the function headers in the code identifying the requirements. An application parsed these files, gathered the markup, and provided the traceability matrix. With the time saved, I also included the high level Data Flow Diagram and Data Dictionary and supplementary information so that the end result was not just the matrix but a complete view of the system - all automatically generated.
                         </p>
                     </div>
 
                     <div class="col-md-4">
                         <h4>Unit Test In Simulation</h4>
                         <p>
-                        A real-time subsystem performing some business logic had originally been scoped as trivial but actually grew quite large (became known as the "junk drawer"). Scenarios grew quite complex and almost impossible to test on the target. Some redesign separated out the logic from the interfaces and a lightweight test framework added - now the code code be built and tests executed on a PC with the powerful tools available. Acceptance of this approach was granted by the QA department. With bug fixes and additional features, eventually the test code grew to be far greater than the code under test - a good indicator.
+                        A real-time subsystem performing some business logic had originally been scoped as trivial but actually grew quite large (it became known as the "junk drawer"). Scenarios grew quite complex and almost impossible to test on the target. Some redesign separated out the logic from the interfaces and a lightweight test framework added - now the code code be built and tests executed on a PC with the powerful tools available. Acceptance of this approach was granted by the QA department. With feature additions and issue resolutions, eventually the test code grew to be much greater than the code under test - a good indicator.
                         </p>
                     </div>
                     
