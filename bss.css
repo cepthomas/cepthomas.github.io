@@ -1,7 +1,7 @@
 
 /* Move down content because we have a fixed navbar */
 body {
-    padding-top: 5.0rem;
+    padding-top: 1.0rem;
 }
 
 .navbar {
